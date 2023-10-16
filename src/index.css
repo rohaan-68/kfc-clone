@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  button {
+    @apply rounded-xl px-5 py-1;
+  }
+} */
+.fade-anim img {
+  animation-duration: 0.5s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    left: 1;
+    /* opacity: 0; */
+  }
+  to {
+    left: 0;
+
+    /* opacity: 0; */
+  }
+}
+body {
+  background-color: #e5e5e57d;
+}
+::-webkit-scrollbar {
+  width: 4.5px;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar:hover {
+  width: 9px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
